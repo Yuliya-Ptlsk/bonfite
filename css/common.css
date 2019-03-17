@@ -1,0 +1,284 @@
+*{margin:0; padding:0;}
+body {position: relative}
+
+/* CSS СТИЛИ ДЛЯ HEADER*/
+header {
+    width:100%;
+    height: 450px;
+    background: url('../images/about-company/clouds-2grey.png') no-repeat center;
+    background-size: 85% 100%;
+}
+.container {
+    /*max-width: 1366px;*/
+    width: 1366px;
+    height: 100%;
+    box-sizing: border-box;
+    margin:auto;
+    position: relative;
+    font-size: 16px;
+    font-family: 'PT Sans', sans-serif;
+    color: #515e6f;
+}
+.logo {
+    max-width: 150px;
+    margin: auto;
+}
+.logo img {
+    max-width: 100%;
+}
+.main-menu {
+    display: flex;
+    justify-content: space-around;
+    border-top: solid 1px #c7c1cf;
+    list-style-type: none;
+    padding-top: 15px;
+    z-index: 1;
+}
+.main-menu li {
+    flex-basis: 15%;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family: 'PT Sans', sans-serif;
+    color: #515e6f;
+    text-shadow: 1px 1px 1px #333e50;
+}
+.main-menu li:nth-of-type(1) {
+    flex-basis: 230px;
+}
+.main-menu li a {
+    text-decoration: none;
+    color: #515e6f;
+    text-shadow: 1px 1px 1px #333e50;
+    cursor: pointer;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 10px 15px;
+    position: relative;
+}
+.main-menu li a:before, .main-menu li a:after {
+    content:'';
+    width: 0;
+    height:0;
+    position: absolute;
+    opacity: 0;
+    box-sizing: border-box;
+}
+.main-menu li a:before {
+    bottom: 0;
+    left:0;
+    border-left: 1px solid #9290A6;
+    border-top: 1px solid #9290A6;
+    transition: 0s ease opacity .8s, .2s ease width .4s, .2s ease height .6s;
+}
+.main-menu li a:after {
+    top: 0;
+    right: 0;
+    border-right: 1px solid #9290A6;
+    border-bottom: 1px solid #9290A6;
+    transition: 0s ease opacity .4s, .2s ease width , .2s ease height .2s;
+}
+.main-menu li a:hover:before, .main-menu li a:hover:after {
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+}
+.main-menu li a:hover:before {
+    transition: 0s ease opacity 0s, .2s ease height, .2s ease width .2s;
+}
+.main-menu li a:hover:after {
+    transition: 0s ease opacity .4s, .2s ease height .4s , .2s ease width .6s;
+}
+.main-menu li a:active {
+    background: rgba(157,144,166,.4);
+}
+.submenu {
+    display: none;
+    list-style-type: none;
+    z-index: 1;
+}
+.submenu li {
+    text-transform: none;
+    text-align: left;
+    margin: 5px 0;
+    white-space: nowrap;
+    padding-left:5px;
+}
+.submenu li a {
+    text-shadow: 0 0 1px #333e50;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+.submenu li a:after {
+    content:'';
+    width: 0;
+    height:0;
+    position: absolute;
+    opacity: 0;
+    box-sizing: border-box;
+}
+.submenu li a:after, .submenu li a:before {
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    border-bottom: none;
+}
+.submenu li a:after {
+    bottom: 0;
+    left:0;
+    border-bottom: 1px solid #9290A6;
+    transition: 0s ease opacity .8s, .2s ease width .4s, .2s ease height .6s;
+}
+.submenu li a:hover:after {
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    transition: 0s ease opacity 0s, .2s ease height, .2s ease width .2s;
+}
+.submenu li a:active {
+    background: rgba(157,144,166,.4);
+}
+.icon-snowflake-o, .icon-toys, .icon-invert_colors_off, .icon-invert_colors  {
+    color: 	#645e8e;
+    margin-right: 10px;
+    text-shadow: 0 0 1px #737e8b;
+}
+.icon-thermometer-0, .icon-thermometer2  {
+    color: 	#645e8e;
+    margin-left: 3px;
+    margin-right: 13px;
+    text-shadow: 0 0 1px #737e8b;
+}
+/* CSS СТИЛИ ДЛЯ CONTENT*/
+main {
+    box-sizing: border-box;
+    padding: 50px 0 70px;
+
+}
+h1, h2 {
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Caveat', cursive;
+    color: 	#333e50;
+    font-style: italic;
+    margin: 30px 0;
+}
+h1 {
+    margin: 30px 0 50px;
+}
+h1 span, h2 span {
+    color:#32962E;
+}
+
+/* CSS СТИЛИ ДЛЯ FOOTER*/
+footer {
+    width: 100%;
+    position: relative;
+    font-size: 16px;
+    font-family: 'PT Sans', sans-serif;
+    color: #515e6f;
+    font-weight: bold;
+    background: #f6f5f3;
+    overflow: hidden;
+}
+.footer {
+    width: 1366px;
+    display: flex;
+    /*width: 100%;*/
+    justify-content: space-around;
+    align-items: flex-start;
+    box-sizing: border-box;
+    padding: 20px 0;
+    z-index:1;
+}
+.footer div {
+    text-align: center;
+}
+.footer div:nth-of-type(1){
+    align-self: center;
+}
+
+.footer div:nth-of-type(2){
+    margin: 0 20px;
+}
+.footer div:nth-of-type(1) span{
+    color: #333e50;
+    font-size: 25px;
+    font-family: 'Caveat', cursive;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px #7d838c;
+}
+.footer div:nth-of-type(1) img {
+    width: 65px;
+}
+.prefix {
+    color: #515e6f;
+    font-size: 14px;
+}
+.footer a {
+    text-decoration: none;}
+.footer .icon-instagram-with-circle {
+    font-size: 35px;
+    color:#000;
+    margin-left: 15px;
+    opacity: 0.7;
+}
+.footer .icon-instagram-with-circle:hover {
+    opacity: 1;
+}
+.footer .icon-vk-with-circle
+{
+    font-size: 35px;
+    color:#324eaa;
+    opacity: 0.8;
+}
+.footer .icon-vk-with-circle:hover {
+    opacity: 1;
+}
+.footer p {
+    margin: 8px 0;
+}
+.articles {
+    text-decoration: none;
+    outline: none;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 12px 40px;
+    margin: 10px 20px;
+    border-radius: 30px;
+    background-image: linear-gradient(45deg, #fff 0%, #00d946 35%,#009600 50%, #007700 60%, #008a88 75%, #004e71 90%, #00234a 100%);
+    background-position: 100% 0;
+    background-size: 200% 200%;
+    font-size: 18px;
+    font-weight: 300;
+    color: #fff;
+    box-shadow: 0 16px 32px 0 rgba(0,40,120,.35);
+    transition: .5s;
+}
+.articles:hover {
+    box-shadow: 0 0 0 0 rgba(0,40,120,0);
+    background-position: 0 0;
+}
+.footer-decoration-right {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-top: solid 290px #d6ead5;
+    border-left: solid 20vw transparent;
+}
+/* CSS СТИЛИ ДЛЯ TO-TOP*/
+.to-top {
+    display: block;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    cursor: pointer;
+}
+[src*=to-top-3]{
+    display: block;
+    max-width: 60px;
+    opacity: 0.6;
+}
+[src*=to-top-3]:hover {
+    opacity:1;
+}

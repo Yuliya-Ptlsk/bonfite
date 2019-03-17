@@ -1,0 +1,114 @@
+/* CSS СТИЛИ ДЛЯ HEADER*/
+.main-menu li:nth-child(5) a{
+    background: rgba(157,144,166,.4);
+}
+.submenu li:nth-child(5) a {
+    background: transparent;
+}
+[src*=clients-2] {
+    position: absolute;
+    display: block;
+    height: 70%;
+    bottom: 0;
+    left:50%;
+    transform: translateX(-50%);
+}
+/* CSS СТИЛИ ДЛЯ CONTENT*/
+.content
+{
+    display: flex;
+}
+
+.clients
+{
+    flex-basis: 70%;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+}
+.sertificates
+{
+    flex-basis: 30%;
+}
+.sertificates img
+{
+    width: 60%;
+    min-width:150px;
+    display: block;
+    margin: 17px auto;
+    box-shadow: 0 0 3px #585b6e, inset 0 0 5px #959aba, -2px 2px 2px #ababb0,2px 2px 2px #ababb0;
+}
+.clients-item
+{
+    width:167px;
+    height: 185px;
+    box-sizing: border-box;
+    margin: 15px;
+}
+
+/* CSS СТИЛИ ДЛЯ FLIPPER */
+.flipper-container
+{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    perspective: 1200px;
+    transform-style: preserve-3d;
+}
+.flipper
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: 0.6s linear;
+}
+.flipper-front, .flipper-back
+{
+    box-sizing: border-box;
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    backface-visibility: hidden;
+
+}
+.flipper-front
+{
+    z-index:2;
+    transform: rotateY(0);
+    box-shadow: 0 0 3px #585b6e, inset 0 0 5px #959aba;
+    background: #fff;
+}
+.flipper-back
+{
+    transform: rotateY(-180deg);
+    background: linear-gradient(45deg,#fff 30%,#e7f8f0 60%,rgba(50,150,46,0.4));
+    text-indent: 0;
+    padding: 0 5px;
+    box-shadow: inset 1px 1px 1px #c5cbce, 1px 1px 2px #6d7378 ;
+
+}
+.flipper-container:hover .flipper
+{
+    transform: rotateY(180deg);
+}
+.flipper-front img
+{
+    width: 95%;
+    margin: auto;
+    display: block;
+}
+.flipper-back p
+{
+    width:100%;
+    text-align: center;
+    font-size: 16px;
+    color: #515e6f;
+    text-shadow: 1px 1px 1px #333e50
+    /*font-family: 'Rubik', sans-serif;*/
+}

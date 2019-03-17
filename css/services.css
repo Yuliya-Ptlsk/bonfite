@@ -1,0 +1,131 @@
+/* CSS СТИЛИ ДЛЯ HEADER*/
+.main-menu li:nth-child(3) a{
+    background: rgba(157,144,166,.4);
+}
+.submenu li:nth-child(3) a {
+    background: transparent;
+}
+[src*=services-3]
+{
+    position: absolute;
+    display: block;
+    height: 60%;
+    bottom: 0;
+    left:50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+/* CSS СТИЛИ ДЛЯ CONTENT*/
+h1 + p span {
+    font-family: 'Caveat', cursive;
+    color:#32962E;
+    font-size: 23px;
+}
+p {
+    margin: 15px 0;
+}
+[src*=five], [src*=three] {
+    display: inline-block;
+    width: 35px;
+    vertical-align: middle;
+}
+.services {
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+}
+.services__item {
+    flex-basis: 33%;
+    box-sizing: border-box;
+}
+.services__item:nth-of-type(2), .services__item:nth-of-type(4), .services__item:nth-of-type(6) {
+    display: flex;
+    align-items: center;
+}.services__item:nth-of-type(1), .services__item:nth-of-type(3), .services__item:nth-of-type(5) {
+    background: #f6f5f3;
+ }
+.services__item img {
+    display: block;
+    width: 80%;
+    margin: auto;
+}
+.services__item p {
+    text-align: center;
+    color: #333e50;
+    font-size: 17px;
+    font-weight: bold;
+}
+.services__item ul {
+    list-style-type: decimal;
+    margin: 15px 10px 10px 30px;
+}
+.services__item:nth-of-type(1) ul li {
+    margin: 10px 0;
+}
+.services__item ul .sublist {
+    list-style-type: disc;
+}
+
+table
+{
+    border-top: solid #585b6e 1px;
+    border-bottom: solid #585b6e 1px;
+    width: 80%;
+    margin: 80px auto 0;
+}
+table caption
+{
+    margin-bottom: 15px;
+    color: #333e50;
+    font-weight: bold;
+}
+table th
+{
+    background: rgba(50,150,46,.1);
+    text-align: center;
+}
+table tr:nth-child(odd)
+{
+    background: rgba(50,150,46,0.1);
+}
+table tr:nth-child(even)
+{
+    background: rgba(237,237,237,0.1);
+}
+table tr td
+{
+    text-indent: 0;
+    padding-left: 15px;
+}
+table tr td:first-child
+{
+    padding: 7px 15px;
+    text-align: center;
+
+}
+table tr th:first-child
+{
+    text-align: center;
+    text-indent:0;
+}
+table tr td:last-child
+{
+    text-align: center;
+    font-weight: bold;
+}
+table tr:nth-child(25) td
+{
+    text-align: left;
+    font-weight: normal;
+    padding-left: 65px;
+}
+table + p
+{
+    width: 80%;
+    text-indent:0;
+    margin: auto;
+}
+.container p:last-child {
+    text-align: center;
+}

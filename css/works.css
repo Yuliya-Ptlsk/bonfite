@@ -1,0 +1,52 @@
+/* CSS СТИЛИ ДЛЯ HEADER*/
+.main-menu li:nth-child(4) a{
+    background: rgba(157,144,166,.4);
+}
+.submenu li:nth-child(4) a {
+    background: transparent;
+}
+[src*=city] {
+    position: absolute;
+    display: block;
+    height: 60%;
+    bottom: 0;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+/* CSS СТИЛИ ДЛЯ CONTENT*/
+.objects-list
+{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+.list-item
+{
+    flex-basis: 25%;
+    min-width: 300px;
+    margin: 30px 20px;
+    padding: 6px 0;
+    text-indent:0;
+    background:#dddee2;
+    border-radius: 5px;
+    box-shadow: 0 0 2px #9a9ca8, inset 0 0 5px #55695e;
+}
+.list-item img
+{
+    width: 95%;
+    display: block;
+    margin: auto;
+
+}
+.list-item a
+{
+    outline: none;
+}
+.list-item p
+{
+    text-align: center;
+}

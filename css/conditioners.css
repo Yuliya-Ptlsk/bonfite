@@ -1,0 +1,70 @@
+/* CSS СТИЛИ ДЛЯ HEADER
+.submenu li:nth-child(1) a {
+    background: rgba(157,144,166,.4);
+}*/
+
+/* CSS СТИЛИ ДЛЯ CONTENT*/
+.breadcrumbs {
+    border-top: solid 1px #c7c1cf;
+    border-bottom: solid 1px #c7c1cf;
+}
+.breadcrumbs ul, .breadcrumbs ul a {
+    text-decoration: none;
+}
+.breadcrumbs ul {
+    list-style-type: none;
+    margin: 15px 0 15px 30px;
+}
+.breadcrumbs ul li {
+    display: inline;
+}
+.content__wrapper
+{
+    text-indent: 0;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+}
+.block
+{
+    flex-basis: 27%;
+    min-width: 263px;
+    box-shadow: 0 0 3px #585b6e, inset 0 0 5px #959aba;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 15px;
+    margin: 15px auto 15px;
+}
+.block__item
+{
+    margin: auto;
+    width: 150px;
+    height: 120px;
+    border: solid #fff 5px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px #6d7378,0 0 2px 1px #6d7378, inset 1px -1px 3px #d8def1, inset -1px 1px 3px #d8def1 ;
+    background: #fff;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+div .block p a
+{
+    color:		#495a80;
+    text-decoration: underline;
+    font-weight: bolder;
+}
+.block a:hover
+{
+    color: #284fb6;
+    transform: scale(1.1)
+}
+
+.block__item img
+{
+    display: block;
+    margin: auto;
+    width: 90%;
+
+}

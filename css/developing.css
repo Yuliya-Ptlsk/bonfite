@@ -1,0 +1,25 @@
+* {
+    margin:0;
+    padding: 0;
+}
+div {
+    max-width: 1366px;
+    height: 100vh;
+    margin: auto;
+}
+img {
+    display: block;
+    margin: auto;
+    height:70%;
+}
+p {
+    font-size: 50px;
+    font-family: 'Caveat', cursive;
+    text-align: center;
+}
+a {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 18px;
+    display: inline-block;
+    margin: auto;
+}
